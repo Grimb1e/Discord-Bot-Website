@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/FAQ.css">
+  <link rel="stylesheet" href="css/command.scss">
+  <link rel="icon" href="assets/Ot1s-removebg-preview.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400;1,700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="The Best Discord Poll Bot.">
+  <meta name="keywords" content="Discord, Discord Bott, Ot1s.">
+  <meta name="author" content="CROCK">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="FAQ">
+  <meta property="og:description" content="The Best Poll Bot.">
+  <title>Ot1s</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid container">
+      <a class="navbar-brand" href="/">
+        <img src="./assets/Ot1s-removebg-preview.png" alt="" width="50" height="50" class="rounded-circle">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="command.html">Commands</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Community</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: #fff; text-decoration: underline;" class="nav-link" href="#">FAQ</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+
+  <div class="accordion">
+    <div style="color: #fff; text-align: center; font-size: 50px;">
+      FAQ
+    </div>
+    <div class="accordion-item">
+      <h2 id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How to do i use Ot1s?</span><span class="icon" aria-hidden="true"></span></h2>
+      <div class="accordion-content" style="color: #fff;">
+        <br>
+        <p>All commands start with the Slash Command <code>/</code>
+          For a list of commands use the <code>/help</code> command or check the commands page on this website.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Can I change the bot prefix?</span><span class="icon" aria-hidden="true"></span></h2>
+      <div class="accordion-content" style="color: #fff;">
+        <br>
+        <p>Unfortunately, the bot prefix cannot be changed. Ot1s works on the slash command.        </p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script>const items = document.querySelectorAll(".accordion-item h2");
+
+    function toggleAccordion() {
+      const itemToggle = this.getAttribute('aria-expanded');
+      
+      for (i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+      }
+      
+      if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+      }
+    }
+    
+    items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
+</body>
+
+</html>
